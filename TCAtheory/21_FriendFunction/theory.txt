@@ -1,0 +1,29 @@
+									FRIEND FUNCTION & FRIEND CLASS
+								   ================================
+
+Java does not have this concept only CPP has
+
+
+FRIEND FUNCTION & FRIEND CLASS
+-------------------------------
+--> Reflexive relationship is not possible in friend class declaration. Means if class A is friend of class B then it does not mean class B is friend of class A.
+--> Transitive relationship is not possible in friend class declaration.
+--> Friendship can be declared anywhere in the class i.e., in an any section (public/private/protected). 
+--> Friend Functions is a reason, why C++ is not called as a pure Object-Oriented language. Because it violates the concept of Encapsulation.
+
+
+
+Friend Fucntions
+-----------------
+
+Friend Class
+-------------
+void show(A &tob)	// tob - object name temparory object dil
+	{
+		cout << "In show I : " << tob.i << endl;
+		// tob.display();
+	}
+
+
+
+--> class B class A che private data member access kru skto but wise-versa is not possible.
