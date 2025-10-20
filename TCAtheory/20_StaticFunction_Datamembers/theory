@@ -1,0 +1,60 @@
+calling default constructor and parameterized constrauctor at the same time
+-----------------------------------------------------------------------------
+
+class A
+{
+	int i;
+
+	public :
+	A(int i = 0)
+	{
+		this->i = i;
+	}
+
+};
+
+int main()
+{
+	A.ob();	 // by default it will call default constructor
+	A.ob(5); // by default it will call parameterized constructor
+}
+
+
+doubt
+------
+Q. Why class chya end madhe semicolon(;) deto in cpp, java madhe nhi det
+
+
+function calling
+-----------------
+--> Normal function - called using object name (Non-static function)
+	ex: ob.display();
+--> Static function - called using class  name
+	ex: A::show();
+
+
+STATIC CONCEPT
+===============
+--> Class can have static or non-static members both.
+--> Class can have static Data member as well as static function.
+--> Static Members are accessed using class name
+	Ex:
+				A::display();
+--> 
+--> If class have static data member like "static int s;" then this member must be initialized outside the class. Therefore 's' variable will have global scope.
+--> static variable gets memory when program is loaded ( main() chya adhi yala memory milte ) and non-static variable gets memory when object is created
+	DOUBT : 
+	--------
+	mg static member class chya adhi delare ka nhi krt
+	--> tevha tyala mahit nste class declare zala nhi mhnun. ata 2min nantr ky honar ahe he apn sangu skto ka nhi like that
+--> In static function you can access only static data member.
+	But in non-static function you can access non-static data member as well as static data member.
+--> Use : Sharability
+	Static data member are shared by object.
+
+
+
+
+CLASS
+======
+--> Class is a collection of data member and member function. where data members and member functions can be static as well as non-static data members.
