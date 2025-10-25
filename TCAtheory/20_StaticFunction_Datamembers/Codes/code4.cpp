@@ -23,11 +23,11 @@ class A
 
 	static void show()
 	{
-		// cout << "Value of i : " << i << endl;
+		// cout << "Value of i : " << i << endl;		// Not allowed in static function
 		cout << "No. of object created : " << s << endl;
 	}
 
-	// non-static method madhe 's' print kela ahe yes it is allowed but printing non-static data member in static method is not allowed
+	// non-static method madhe 's' print kela ahe yes it is allowed coz object can share memory using static... but printing non-static data member in static method is not allowed
 	// object ch nhi bnvla mg 'i' ksa print hoil error yeil.
 };
 
