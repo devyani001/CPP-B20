@@ -22,6 +22,7 @@ void show(A &tob)	// tob - object name temparory object dil
 	// will give error to resolve this 'friend function' is introduced.
 	tob.i = 0;
 	// data change pn kru skto jo private declare kela hota vrti. direct access hoto na rahili security ani khi.
+	// mhnun cpp ithe mage padu rahila. ani dusrya lang ha function use krt nhi.
 }
 
 int main()
@@ -44,6 +45,9 @@ int main()
 
 	pn ithe using 'FRIEND FUNCTION' apn private data member la access kru skto.
 	mhnun CPP la 'PURE OBJECT ORIENTED PROGRAMMING' mhtl jat 'NAHI'.
+
+	--> mg friend function concept ka ala, there is a concept called 'OPERATOR OVERLOADING' ji bina friend function chi houch skt nhi.
+	--> friend function can be declared in anywhere inside class. irrespective of public or private.
 
 	1)
 	------------

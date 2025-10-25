@@ -49,4 +49,5 @@ int main()
 	so, tumhala tob.display() call krayla phije PN nhi ahe tumchya kde display mg,
 	pahile show() class chya baher hota, ata to class B chya aat madhe ahe
 	mg tumhala to 'CLASS ch AS A AFRIEND' mhnun declare karava lagel.
+
 */
