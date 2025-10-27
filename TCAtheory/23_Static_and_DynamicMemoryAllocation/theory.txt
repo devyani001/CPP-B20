@@ -1,0 +1,59 @@
+							STATIC AND DYNAMIC MEMORY ALLOCATION
+ 						  ========================================
+
+--> Integer Memory la point krnar 'Integer Pointer'.
+--> Float Memory la point krnar 'Float Pointer'.
+--> Object Memory la point krnar 'Object Pointer'.
+--> 'this' is a 'Object Pointer'.
+
+jr maza data 'ob' ni access hoto tr 'P' kabr bnvaycha, what is need of 'Object Pointer'.
+is,,,
+
+MEMORY ALLOCATION
+==================
+
+There are two types of Memory Allocation
+	1. Static Memory Allocation  / Compile time Memory Allocation
+	2. Dynamic Memory Allocation / Runtime Memory Allocation
+
+
+Static Memory Allocation  / Compile time Memory Allocation
+-----------------------------------------------------------
+--> When memory is allocated to the program during compile time by the compiler such type of memory allocation is called as Static Memory Allocation.
+--> This type of Memory Allocation is Fixed/Permanent
+	i.e., it never shrinks or grow during runtime.
+
+--> Ex :
+		int i;					// 4  byte
+		int a[3];				// 12 byte
+
+		Student ob;				// 28 byte (rno : 4, name : 20, per : 4)
+		Student S[3];			// 28*3 byte
+
+
+
+Dynamic Memory Allocation / Runtime Memory Allocation
+------------------------------------------------------
+--> When memory is allocated to the program during its runtime (Execution time) such type of memory allocation is called as Dynamic Memory Allocation.
+--> Dynamically Allocated Memory will given on 'HEAP'.
+
+
+
+
+YOU MUST KNOW :
+================
+--> ( funtion madhe declare kelele variable la memory kuthe milte 'STACK' vr
+	 ani je dynamically memory allocate krte tyala memory 'HEAP' vr milte )
+--> in java everything is dynamic.
+--> ( MEMORY ALLOCATION IN C & CPP )
+				C 				C++
+				----			-----
+				(Functions)		(Operators)
+allocate   -	malloc()		new
+deallocate -	free			delete
+				
+'new' 	 - is an operator used to allocate memory on HEAP
+'delete' - is an operator used to free dynamically allocated Memory.
+		   delete i;
+		   // not possible coz i is statically defined. and delete is used to dealloate memory in c++ dynamically.
+		   if u want to deallocate memory u must have to use 'Pointer' concept. i.e., Object Pointer.
