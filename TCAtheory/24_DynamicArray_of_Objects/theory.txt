@@ -1,0 +1,62 @@
+								DYNAMIC ARRAY OF OBJECTS
+ 							  ============================
+
+
+--> can use dynamic memory allocation on normal variable also.
+
+
+Q. Why we have to create an Array Dynamically ?
+------------------------------------------------
+--> If I declared an Array of Size 3 statically like - int a[3];
+This array will get memory compile time and we know that compile time memory allocation is fixed type.
+--> This are can not grow or shrink at runtime.
+	if value of n is 1 then we can see WASTAGE of 2 memories
+	if value of n is 7 then we can see SHORTAGE of 4 Memories
+	Static Memory allocation has 2 main disadvantage - WASTAGE & SHORTAGE
+--> This is, Static Memory Allocation sufferes from shortage and Wastage of memory problem.
+	Therefore to overcome from it We use 'Dynamic Memory Allocation'.
+
+
+Concept :
+---------
+
+	int n = 5;
+	int *P;
+
+	P = new int[n];			// Allocates memory for an Array
+
+	// write logic that you needed
+
+	delete []P;				// It freezes memory for whole Array
+
+	for(int i=0; i<n; i++)
+	{
+		cout << "Enter the Data : ";
+		cin  >> P[i];
+	}
+
+
+Note :
+-------
+--> In case Array of objects, Created Statically or Dynamically, by default Empty Constructor gets called.
+	Example :
+		Static Array fo Object 				Dynamic Array of Object
+		Student S[3];						P = new Student[3];
+											delete []P;
+
+	OUTPUT :
+		Empty / Default Constructor !!
+		Empty / Default Constructor !!
+		Empty / Default Constructor !!
+
+		Student Destructor Called!
+		Student Destructor Called!
+		Student Destructor Called!
+-----------------------------------------------------------------------------------------------------------
+
+HOMEWORK :
+===========
+Array of object che jewdhe code kelet sgle ata using P[i] krayche ahe. budhwar paryant cha vel ahe
+
+REVISE CONSTRUCTOR INITIALIZER LIST
+------------------------------------
