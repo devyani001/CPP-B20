@@ -1,0 +1,56 @@
+										Object Pointer
+ 								    ======================
+
+Q. What is Pointer ?
+---------------------
+ek memory ahe jyat apn address thu skto
+--> Pointer is a Memory which stores address.
+
+	int i  = 77;
+	int *p = &i;	--> Referencing Statement
+
+	* --> Pointer
+	& --> AddressOf Operator
+
+	int p  = &j;
+	prt p chi value change zali for i to j. that's why it is called as 'Pointer Variable'.
+	ji gosht change hote called as 'Variable'.
+
+	cout << i;		// 77
+	cout << *p;		// 77		--> dereferencing Statement
+
+	*P = 88;
+
+	cout << i << endl;		// 88
+	cout << *P << endl;		// 88
+	changed the data of i using pointer P;
+
+
+--> 'P' is a pointer variable.
+--> 'P' is a integer pointer means it should point to integer variable.
+
+
+
+Q. What is Object Pointer ?
+----------------------------
+--> Pointer of type class is called as 'Object Pointer'
+	class Student
+	{
+		--
+		--
+	}
+
+	Student *P;	--> Here P is Object pointer bcz its type is 'Student' and 'Student' is a class.
+			--> Student and P ekadh class cha asla pahije
+
+--> Object pointer points to Object means it stores address of same class object.
+															--------
+
+Here 'P' is a object pointer points to object of type 'Student'
+ob.rno			--> Error bcz rno is private
+ob.display()	--> Allowed
+p ->(pointer points to rno) rno		--> Error bcz rno is private
+p -> display(); --> Allowed
+
+--> .(dot), -> (Arrow) are member access operator.
+--> .(dot) having highest priority
