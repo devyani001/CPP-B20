@@ -53,3 +53,4 @@ p ->(pointer points to rno) rno		--> Error bcz rno is private
 p -> display(); --> Allowed
 
 --> .(dot), -> (Arrow) are member access operator.
+--> 'this' is a 'Object Pointer'.
