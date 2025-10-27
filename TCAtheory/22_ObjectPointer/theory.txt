@@ -44,7 +44,7 @@ Q. What is Object Pointer ?
 			--> Student and P ekadh class cha asla pahije
 
 --> Object pointer points to Object means it stores address of same class object.
-															--------
+															----------
 
 Here 'P' is a object pointer points to object of type 'Student'
 ob.rno			--> Error bcz rno is private
@@ -53,4 +53,3 @@ p ->(pointer points to rno) rno		--> Error bcz rno is private
 p -> display(); --> Allowed
 
 --> .(dot), -> (Arrow) are member access operator.
---> .(dot) having highest priority
