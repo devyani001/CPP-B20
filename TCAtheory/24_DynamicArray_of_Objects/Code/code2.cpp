@@ -59,16 +59,14 @@ int main()
 	int n;
 	Student *P;
 
-
 	cout << "How many Students you have : ";
 	cin  >> n;
 
-	// P = new Student[n];
-	P = new Student[n](101, "AAA", 60);
+	P = new Student[n];
+	// P = new Student[n](101, "AAA", 60);		ERROR - not possible to take parameter thats why when object is created by default Empty Constructor is called.
 
 	delete []P;
 
 	return 0;
-
 
 }
