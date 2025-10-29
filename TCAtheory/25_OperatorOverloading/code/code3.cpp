@@ -10,7 +10,7 @@ class ABC
 	public :
 
 	// declaring both defalut and parameterized constructor at the same time. 
-	A(int x=0; float y=0)
+	ABC(int x=0, float y=0)
 	{
 		i = x;
 		f = y;
