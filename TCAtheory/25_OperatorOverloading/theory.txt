@@ -1,0 +1,23 @@
+							Operator Overloading
+ 				    	  ========================
+
+
+Function Overloading
+----------------------
+--> When more than one function having the same name but different parameter sequence.
+
+
+Operator Overloading
+----------------------
+--> '+' know how to operate on integer, floats
+	E.g :
+		int a = 3;
+		int b = 5;
+
+		int c = a + b;
+
+		cout << c << endl;
+
+BUT...
+	'+' does not know how to add user defined objects, If we wanted to do it then we have to overload '+' operator.
+--> Overloading operator means we have to write operator function for '+'.
