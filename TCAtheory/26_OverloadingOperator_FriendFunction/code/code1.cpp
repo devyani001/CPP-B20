@@ -16,7 +16,7 @@ class ABC
 		f = y;
 	}
 
-	ABC operator +(ABC &S)
+	ABC operator +(ABC &S)		// '+' operator overloaded as a member function
 	{
 		ABC temp;
 		temp.i = i + S.i;
