@@ -1,0 +1,50 @@
+								INHERITANCE and TYPES
+ 			 				   =====================
+
+
+--> One class aquires properties (Data Member or Function) of another class then it is called as Inheritance.
+--> Existing airport la tasach thevla bss adani ni tyat new features add kelet. new class bnvla so that no harm to existing class.
+
+
+Parent class				-->	Child   class
+Base   class				--> 	derived class
+Super  class(java)		--> 	sub     class(java)
+
+
+Types of Inheritance
+---------------------
+1. Single 	  	Inheritance
+2. Multilevel 	Inheritance
+3. Multiple   	Inheritance
+4. Hierarchical Inheritance
+5. Hybrid 		Inheritance
+--------------------------------------------------------
+
+1. Single Inheritance
+   -> B inherits properties of A
+
+2. Multilevel Inheritance
+   -> C inherits properties of B, B inherits properties of A
+
+3. Multiple Inheritance
+   -> A and B are two parent class, C is child class inherites properties of Both A and B parent Classes.
+
+4. Hierarchical Inheritance
+   -> Combination of single + multilevel
+
+5. Hybrid Inheritance
+   -> Combination of all Inheritance
+---------------------------------------------------------------------------------------------------------------
+
+NOTE :
+-------
+	There is only single and multilevel. There is no multiple, hierarchical and hybrid inheritance in java.
+	mg cpp madhe ka ahe krn ithe 'VIRTUAL' keyword ahe.
+	There is 'NO VIRTUAL' keyword in java, karn ha keyword ala ki tithe object pointer concept vaprava lagto ani java mdhe pointerch nhi ahe.
+
+
+Scope Resolution Operator ( :: )
+---------------------------------
+1) Global variable
+2) Static varibale
+3) Function over-riding
