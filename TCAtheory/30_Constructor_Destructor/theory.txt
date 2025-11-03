@@ -1,0 +1,49 @@
+class A
+{
+	private :
+		int i;	// Paise
+
+	protected :
+		int j;	// car
+
+	public :
+		int k;	//glass
+};
+
+A ob;
+ob.k = 99;	--> Allowed
+
+ob.i 		--> error
+ob.j		--> error
+
+
+
+Q. In Multiple Inheritance how u will call constructor ?
+---------------------------------------------------------
+
+class A
+{
+	int x;
+};
+
+class B
+{
+	int y;
+};
+
+class C : public A, public B
+{
+	int z;
+	C(int i, int j, int k) : A(i), B(j)
+	{
+		z = k;
+	}
+};
+
+C ob(11,22,33);
+
+
+
+Q. class C : public A --> A la public ch ka br lihto
+------------------------------------------------------
+mode of inheritance box table diagram remember...
