@@ -1,0 +1,170 @@
+										VIRTUAL CONCEPT & ABSTRACT CLASS
+                                       ==================================
+
+
+Polymorphism
+-------------
+--> Ability to take more than one form is called Polymorphism.
+--> Ex : Overloading, Overriding
+--> Compile Time Polymorphism(decision making process) 	: Overloading
+--> Run Time Polymorphism     						   	: over-riding 
+
+// Overloading
+class ABC 
+{
+	// Overloading doesn't need Inheritance
+	public :
+	void display(int i)
+	{
+		#1
+	}
+
+	void display(float f)
+	{
+		#2
+	}
+};
+
+ABC ob;
+ob.display(5);		// fun call is binded to function body at compile time
+ob.display(3.4);
+
+
+Compile Time Polymorphism / Early Binding / static Linking
+-----------------------------------------------------------
+--> When program has function over-loading, then function call is binded to function body at compile time is called as Compile time Polymorphism.
+
+Run Time Polymorphism / Late Binding / Dynamic Linking(Runtime)
+----------------------------------------------------------------
+--> When program has function over-riding, then function call is binded to function body at runtime is called as Runtime Polymorphism.
+
+
+// Overriding
+class P
+{
+	public :
+	void display()
+	{
+		cout << "IND" << endl;
+	}
+};
+
+class C : public P
+{
+	public :
+	void display()
+	{
+		cout << "AUS" << endl;
+	}
+};
+
+C ob;
+ob.display();
+
+output :
+---------
+IND
+AUS
+
+
+
+Sachin (ekch vyakti pn different roles)
+8AM-5AM : Emp
+5PM-8PM : Husband
+8PM 	: dad
+9PM 	: Son
+
+
+
+// Time : 28min lecture
+
+
+'virtual'
+---------
+--> virtual is a keyword
+--> function can be virtual
+--> destructor can be virtual, constructor can not be virtual WHY ???
+--> Base/Parent class can be virtual
+--> Jar Base/Parent class cha pointer child class chya object la point krt asel tarach virtual keyword cha effect disto.
+
+
+// Time : 38min lecture
+
+FUNCTION
+=========
+		
+		Base *P ---------> Derived cha Object
+
+Ex-1:
+		Base *P;
+
+		Derived ob 		// P--->ob[ i   j   P'display C'display]
+
+		P = &ob;		// base class cha pointer can point to derived class object
+
+		P->display();
+
+
+Ex-2:
+		Base *P = new Derived();
+
+
+
+
+--> child madhe parent cha display call kru skta, pn parent cha display madhe call nhi kru skt
+	error : child is not defined...
+
+
+
+DESTRUCTOR
+===========
+(code8.cpp)
+--> 
+
+
+
+CLASS VIRTUAL
+==============
+(code13.cpp)
+--> 
+
+class Base
+{
+	
+};
+
+class Derived : virtual public Base
+{
+	
+};
+
+------------------------------------------------------------------------
+
+
+(code13.cpp)
+ABSTRACT CLASS
+---------------
+--> Asa class jyat pure virtual function ahe.
+--> A class which contains at least one pure virtual function.
+--> Asa class jyacha object bnvu skt nhi, function ch nhi ahe tr object ksa bnvnar.
+--> The class which has pure virtual function is called as Abstract class.
+--> if class is a abstract class, then you can not instantiate that class i.e., we can not create object of that class.
+
+
+PURE VIRTUAL FUNCTION
+----------------------
+--> Asa function jyacha code lihu skt nhi which is equited to 0.
+--> The function which does not have code means which is equated to zero is called as Pure Virtual function.
+
+
+Ex :
+-----
+	class Shape							// abstract class
+	{
+		virtual void draw() = 0;		// pure virtual function
+	}
+
+
+--> Shape *P = new Shape();
+	Ashya abstract cls cha pointer ka bnvaycha, error ka nhi yet
+	(code15.cpp)
