@@ -1,0 +1,76 @@
+TEMPLATES in C++
+=================
+
+Add On - (java Collection)
+---------------------------
+Course		: STL in C++
+Batch Code	: ???
+
+
+Glass
+1. Glass is Template
+2. Glass as a Generic
+
+Generic - not fixed to any type
+
+
+--------------------------------
+Templates in C++
+=================
+--> Generic function -- Template function
+--> When any function has same action on different Data Types then in that scenario only we can use template function.
+
+Example-1:
+-----------
+template<class T>
+void display(T a)
+{
+	cout << a;
+}
+
+
+Example-2:
+-----------
+template<class T, class S>
+void display(T a, S b)
+{
+	cout << a << b;
+}
+
+display<int,double>(3,3.5);
+display<char,int>('@',3);
+
+
+Example-3:
+-----------
+template<class T, class S=float>	// Default Parameter
+void display(T a, S b)
+{
+	cout << a << b;
+}
+
+display<int>(3,4.5);			// by default 2nd datatype float gheil
+display<int,char>(3,'@');		// jr datatype define kele tr tech yetil op mdhe otherwise default float ghetil
+display(3,9.5);
+
+
+
+void change(int &x,int &y)
+{
+	int t;
+	t = x;
+	x = y;
+	y = t;
+}
+
+void change(float &x,float &y)
+{
+	int t;
+	t = x;
+	x = y;
+	y = t;
+}
+
+--> 2 function but operation is same, so instead of writing diff functions, can we write 1 function for all operations
+use Templates concept
+(see code3.cpp)
