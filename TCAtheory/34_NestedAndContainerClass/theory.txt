@@ -1,0 +1,81 @@
+Nested Class / Inner Class(Java)
+=================================
+
+--> When you declare class inside a class is called as 'Nested class'.
+--> Example :
+		class A
+		{
+			// Data members
+			// Member functions
+
+			class B
+			{
+nested -->		// Data members
+class			// Member functions
+			};
+
+		};
+
+
+
+lly,
+Container class :
+------------------
+--> When one class's object is declared in another class is called as 'container class'.
+--> Example :
+		class B
+		{
+
+		};
+		class A
+		{
+			int i;
+			B  ob;		<--- class B's object is declared as a data member in class A
+		};
+
+
+--> donhi case madhe data la memory same ch milel but,,,
+
+
+Nested class
+-------------
+Problem :
+--> We can not declare object of class B outside of class A.
+--> Solution to this problem is Container class i.e Declare Nested class's object as member of outer class
+
+Note :
+-------
+Container class is better than nested class because both the classes are independent & each class can be used separately.
+
+
+
+
+
+
+Namespaces in C++
+==================
+(code5.cpp)
+
+std - madhe sgle ostream ani istream che object define kele ahet (code10.cpp)
+------------------------------------------------------------------------------
+ostream cout;
+istream cin;
+
+
+--> using namespace std;         -- 'std' is a name space.
+--> It is collection of variable, functions and classes.
+--> Example :
+	----------
+				namespace X
+				{	
+variable -->		int i = 99;	
+function -->		void display()
+					{
+						cout << "India will win" << endl;
+					}
+
+Class    -->		class A
+					{
+						// data member & member functions
+					};
+				}
